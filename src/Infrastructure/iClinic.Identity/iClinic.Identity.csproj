@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\iClinic.Domain\iClinic.Domain.csproj" />
+    <ProjectReference Include="..\iClinic.Infrastructure\iClinic.Infrastructure.csproj" />
+    <ProjectReference Include="..\iClinic.Presistence\iClinic.Presistence.csproj" />
+  </ItemGroup>
+
+</Project>

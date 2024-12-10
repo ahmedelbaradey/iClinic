@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\iClinic.Application\iClinic.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Identity\iClinic.Identity.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Infrastructure\iClinic.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Logger\iClinic.Logger.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Presentation\iClinic.Presentation.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Presistence\iClinic.Presistence.csproj" />
+  </ItemGroup>
+
+</Project>
