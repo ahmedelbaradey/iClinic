@@ -1,6 +1,6 @@
 ﻿namespace iClinic.Domain.Helpers
 {
-    public class ManagerUserRolesResponse
+    public class ManageUserRolesResponse
     {
         public int UserId { get; set; }
         public List<UserRoles> UserRoles { get; set; }

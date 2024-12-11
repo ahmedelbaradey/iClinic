@@ -131,12 +131,12 @@ namespace  iClinic.Identity.Implementations
                 throw;
             }
         }
-        public async Task<ManagerUserRolesResponse> GetManagerUsersRolesData(User user)
+        public async Task<ManageUserRolesResponse> GetManagerUsersRolesData(User user)
         {
             try
             {
                 var userRoles = new List<UserRoles>();
-                var response = new ManagerUserRolesResponse();
+                var response = new ManageUserRolesResponse();
 
                 var rolesForUser = await _userManager.GetRolesAsync(user);
                 var rolesInSystem = await _roleManager.Roles.ToListAsync();

@@ -1,7 +1,12 @@
-﻿using  iClinic.Presentation.Bases;
-using iClinic.Application.Features.Authorizations.Commands.Models;
-using iClinic.Application.Features.Authorizations.Queries.Models;
+﻿using iClinic.Presentation.Bases;
 using Microsoft.AspNetCore.Mvc;
+using iClinic.Application.Features.Authorizations.Commands.Handlers.EditRole;
+using iClinic.Application.Features.Authorizations.Commands.Handlers.EditUserRoles;
+using iClinic.Application.Features.Authorizations.Queries.Handlers.GetRoleList;
+using iClinic.Application.Features.Authorizations.Queries.Handlers.GetRoleById;
+using iClinic.Application.Features.Authorizations.Commands.Handlers.AddRole;
+using iClinic.Application.Features.Authorizations.Commands.Handlers.DeleteRole;
+using iClinic.Application.Features.Authorizations.Queries.Handlers.ManageUserRoles;
 
 namespace iClinic.Presentation.Controllers
 {
@@ -17,9 +22,9 @@ namespace iClinic.Presentation.Controllers
         }
 
         [HttpGet("Role/{Id:int}")]
-        public async Task<IActionResult> GetRoleById([FromRoute] int Id)
+        public async Task<IActionResult> GetRoleById([FromRoute] int id)
         {
-            var response = await Mediator.Send(new GetRoleByIdQuery(Id));
+            var response = await Mediator.Send(new GetRoleByIdQuery { Id=id});
             return NewResult(response);
         }
 
@@ -38,16 +43,16 @@ namespace iClinic.Presentation.Controllers
         }
 
         [HttpDelete("{Id:int}")]
-        public async Task<IActionResult> DeleteRole([FromRoute] int Id)
+        public async Task<IActionResult> DeleteRole([FromRoute] int id)
         {
-            var response = await Mediator.Send(new DeleteRoleCommand(Id));
+            var response = await Mediator.Send(new DeleteRoleCommand { Id=id});
             return NewResult(response);
         }
 
-        [HttpGet("Manager-User-Roles/{UserId:int}")]
-        public async Task<IActionResult> ManagerUserRoles([FromRoute] int UserId)
+        [HttpGet("Manager-User-Roles/{id:int}")]
+        public async Task<IActionResult> ManagerUserRoles([FromRoute] int id)
         {
-            var response = await Mediator.Send(new ManagerUserRolesQuery(UserId));
+            var response = await Mediator.Send(new ManageUserRolesQuery { Id=id});
             return NewResult(response);
         }
 

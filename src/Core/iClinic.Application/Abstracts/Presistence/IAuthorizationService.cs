@@ -11,7 +11,7 @@ namespace  iClinic.Application.Abstracts.Presistence
         public Task<bool> IsRoleNameExist(string rolename);
         public Task<Role> GetRoleByID(int Id);
         public Task<List<Role>> GetRoleListAsync();
-        public Task<ManagerUserRolesResponse> GetManagerUsersRolesData(User user);
+        public Task<ManageUserRolesResponse> GetManagerUsersRolesData(User user);
         public Task<string> UpdateUserRoles(EditUserRolesRequest request);
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace iClinic.Domain.Helpers
 {
-    public class EditUserRolesRequest : ManagerUserRolesResponse
+    public class EditUserRolesRequest : ManageUserRolesResponse
     {
 
     }

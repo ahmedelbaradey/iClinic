@@ -6,7 +6,6 @@ namespace iClinic.Application.Features.Authentications.Queries.Handlers.Validate
 {
     public record AccessTokenQuery : IQuery<BaseResponse<string>>
     {
-
         public string Accesstoken { get; set; } = null!;
     }
 }

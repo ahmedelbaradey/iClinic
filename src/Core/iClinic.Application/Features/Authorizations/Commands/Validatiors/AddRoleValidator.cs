@@ -1,5 +1,5 @@
-﻿using iClinic.Application.Features.Authorizations.Commands.Models;
-using FluentValidation;
+﻿using FluentValidation;
+using iClinic.Application.Features.Authorizations.Commands.Handlers.AddRole;
 
 namespace iClinic.Application.Features.Authorizations.Commands.Validatiors
 {

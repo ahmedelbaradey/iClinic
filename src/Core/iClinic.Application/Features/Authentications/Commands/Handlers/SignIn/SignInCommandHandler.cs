@@ -51,6 +51,5 @@ namespace iClinic.Application.Features.Authentications.Commands.Handlers.SignIn
         }
         #endregion
 
-
     }
 }
