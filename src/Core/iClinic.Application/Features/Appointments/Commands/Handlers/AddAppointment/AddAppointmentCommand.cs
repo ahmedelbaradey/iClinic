@@ -2,7 +2,7 @@
 
 namespace iClinic.Application.Features.Appointments.Commands.Handlers.AddAppointment
 {
-    public class AddAppointmentCommand : ICommand<BaseResponse<string>>
+    public record AddAppointmentCommand : ICommand<BaseResponse<string>>
     {
         public DateTime StartTime { get; set; }
         public DateTime? EndTime { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace iClinic.Application.Features.AppointmentStatuses.Queries.Responses
 {
-    public class GetSingleAppointmentStatusResponse : GetAppointmentStatusListResponse
+    public record GetSingleAppointmentStatusResponse : GetAppointmentStatusListResponse
     {
 
     }

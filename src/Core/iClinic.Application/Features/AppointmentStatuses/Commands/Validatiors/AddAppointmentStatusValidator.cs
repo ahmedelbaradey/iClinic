@@ -1,5 +1,5 @@
-﻿using iClinic.Application.Features.AppointmentStatuses.Commands.Models;
-using FluentValidation;
+﻿using FluentValidation;
+using iClinic.Application.Features.AppointmentStatuses.Commands.Handlers.AddAppointmentStatuses;
 
 namespace iClinic.Application.Features.AppointmentStatuses.Commands.Validatiors
 {

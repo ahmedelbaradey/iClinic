@@ -1,49 +1,33 @@
 ﻿using AutoMapper;
 using iClinic.Application.Base;
-using iClinic.Application.Features.AppointmentStatuses.Queries.Models;
 using iClinic.Application.Features.AppointmentStatuses.Queries.Responses;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Application.Abstracts.Presistence;
 using MediatR;
+using iClinic.Application.Features.AppointmentStatuses.Queries.Handlers.GetAppointmentStatusLById;
+using iClinic.Application.Features.AppointmentStatuses.Queries.Handlers.GetAppointmentStatusList;
+using iClinic.Application.Abstracts.Logger;
 
 namespace iClinic.Application.Features.AppointmentStatuses.Queries.Handlers
 {
-    public class AppointmentStatusQueryHandler : BaseResponseHandler,
-        IRequestHandler<GetAppointmentStatusListQuery, BaseResponse<List<GetAppointmentStatusListResponse>>>,
-        IRequestHandler<GetAppointmentStatusLByIdQuery, BaseResponse<GetSingleAppointmentStatusResponse>>
+    public class GetAppointmentStatusLByIdQueryHandler : BaseResponseHandler,IQueryHandler<GetAppointmentStatusLByIdQuery, BaseResponse<GetSingleAppointmentStatusResponse>>
     {
 
         #region Fileds
         private readonly IAppointmentStatusService _appointmentStatusService;
         private readonly IMapper _mapper;
-
+        private readonly ILoggerManager _logger;
         #endregion
 
         #region Constructors
-        public AppointmentStatusQueryHandler(IAppointmentStatusService appointmentStatusService, IMapper mapper)
+        public GetAppointmentStatusLByIdQueryHandler(IAppointmentStatusService appointmentStatusService, IMapper mapper, ILoggerManager logger)
         {
             _appointmentStatusService = appointmentStatusService;
             _mapper = mapper;
+            _logger = logger;
         }
         #endregion
 
         #region Functions
-
-        #endregion
-        public async Task<BaseResponse<List<GetAppointmentStatusListResponse>>> Handle(GetAppointmentStatusListQuery request, CancellationToken cancellationToken)
-        {
-            try
-            {
-                var list = await _appointmentStatusService.GetAppointmentStatusListAsync();
-                var listMapper = _mapper.Map<List<GetAppointmentStatusListResponse>>(list);
-                return Success(listMapper);
-
-            }
-            catch (Exception ex)
-            {
-                return ServerError<List<GetAppointmentStatusListResponse>>(ex.Message);
-            }
-        }
-
         public async Task<BaseResponse<GetSingleAppointmentStatusResponse>> Handle(GetAppointmentStatusLByIdQuery request, CancellationToken cancellationToken)
         {
             try
@@ -61,5 +45,9 @@ namespace iClinic.Application.Features.AppointmentStatuses.Queries.Handlers
                 return ServerError<GetSingleAppointmentStatusResponse>(ex.Message);
             }
         }
+        #endregion
+
+
+
     }
 }

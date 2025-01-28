@@ -1,8 +1,11 @@
-﻿using  iClinic.Presentation.Bases;
-using iClinic.Application.Features.AppointmentStatuses.Commands.Models;
-using iClinic.Application.Features.AppointmentStatuses.Queries.Models;
+﻿using iClinic.Presentation.Bases;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using iClinic.Application.Features.AppointmentStatuses.Commands.Handlers.AddAppointmentStatuses;
+using iClinic.Application.Features.AppointmentStatuses.Commands.Handlers.UpdateAppointmentStatuses;
+using iClinic.Application.Features.AppointmentStatuses.Queries.Handlers.GetAppointmentStatusList;
+using iClinic.Application.Features.AppointmentStatuses.Queries.Handlers.GetAppointmentStatusLById;
+using iClinic.Application.Features.AppointmentStatuses.Commands.Handlers.DeleteAppointmentStatuses;
 
 namespace iClinic.Presentation.Controllers
 {
@@ -28,9 +31,9 @@ namespace iClinic.Presentation.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public async Task<IActionResult> GetAppointmentStatusById([FromRoute] int Id)
+        public async Task<IActionResult> GetAppointmentStatusById([FromRoute] int id)
         {
-            var response = await Mediator.Send(new GetAppointmentStatusLByIdQuery(Id));
+            var response = await Mediator.Send(new GetAppointmentStatusLByIdQuery() {Id = id });
             return NewResult(response);
         }
 
@@ -66,9 +69,9 @@ namespace iClinic.Presentation.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public async Task<IActionResult> DeleteAppointmentStatus([FromRoute] int Id)
+        public async Task<IActionResult> DeleteAppointmentStatus([FromRoute] int id)
         {
-            var response = await Mediator.Send(new DeleteAppointmentStatusCommand(Id));
+            var response = await Mediator.Send(new DeleteAppointmentStatusCommand() { Id= id});
             return NewResult(response);
         }
     }

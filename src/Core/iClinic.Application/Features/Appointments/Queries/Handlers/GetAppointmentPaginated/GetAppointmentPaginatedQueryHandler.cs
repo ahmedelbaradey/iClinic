@@ -30,11 +30,18 @@ namespace iClinic.Application.Features.Appointments.Queries.Handlers.GetAppointm
         {
             try
             {
-                Expression<Func<Appointment, GetAppointmentPaginatedResponse>> expression =
-                    entity => new GetAppointmentPaginatedResponse(entity.AppointmentId, entity.TimeCreated, entity.StartTime,
-                    entity.EndTime, entity.PatientCase.Patient.FirstName + " " + entity.PatientCase.Patient.LastName,
-                    entity.Doctor.FirstName + " " + entity.Doctor.LastName, entity.PatientCase.TotalCost, entity.PatientCase.AmountPaid, entity.AppointmentStatus.StatusName);
-
+                Expression<Func<Appointment, GetAppointmentPaginatedResponse>> expression = entity => new GetAppointmentPaginatedResponse()
+                {
+                    Id = entity.AppointmentId,
+                    TimeCreated = entity.TimeCreated,
+                    StartTime=  entity.StartTime,
+                    EndTime=entity.EndTime,
+                    Patient =    entity.PatientCase.Patient.FirstName + " " + entity.PatientCase.Patient.LastName,
+                    Doctor=   entity.Doctor.FirstName + " " + entity.Doctor.LastName,
+                    TotalCost=  entity.PatientCase.TotalCost,
+                    AmountPaid=  entity.PatientCase.AmountPaid,
+                    Status=   entity.AppointmentStatus.StatusName
+                };
                 var filterResult = _appointmentService.FilterAppointmentPaginatedQuerable(request.DoctorName,
                     request.PatientName, request.StatusName);
 

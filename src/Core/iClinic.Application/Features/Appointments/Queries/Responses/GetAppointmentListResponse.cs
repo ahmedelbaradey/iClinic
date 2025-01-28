@@ -1,6 +1,6 @@
 ﻿namespace iClinic.Application.Features.Appointments.Queries.Responses
 {
-    public class GetAppointmentListResponse
+    public record GetAppointmentListResponse
     {
         public int Id { get; set; }
         public DateOnly TimeCreated { get; set; }
