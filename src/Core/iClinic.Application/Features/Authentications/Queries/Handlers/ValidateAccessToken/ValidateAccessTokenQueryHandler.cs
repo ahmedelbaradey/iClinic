@@ -1,7 +1,7 @@
 ﻿using iClinic.Application.Base;
-using iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Authentications.Queries.Handlers.ValidateAccessToken
 {

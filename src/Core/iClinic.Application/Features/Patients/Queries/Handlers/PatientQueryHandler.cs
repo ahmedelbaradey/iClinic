@@ -4,7 +4,7 @@ using iClinic.Application.Features.Patients.Queries.Models;
 using iClinic.Application.Features.Patients.Queries.Responses;
 using iClinic.Application.Wappers;
 using iClinic.Domain.Entities;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 using System.Linq.Expressions;
 

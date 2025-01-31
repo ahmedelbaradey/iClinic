@@ -4,7 +4,7 @@ using iClinic.Application.Features.StatusHistories.Querires.Models;
 using iClinic.Application.Features.StatusHistories.Querires.Responses;
 using iClinic.Application.Wappers;
 using iClinic.Domain.Entities;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System.Linq.Expressions;

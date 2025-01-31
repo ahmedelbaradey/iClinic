@@ -1,6 +1,6 @@
 ﻿
 using FluentValidation;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using iClinic.Application.Features.Appointments.Commands.Handlers.AddAppointment;
 
 namespace iClinic.Core.Features.Appointments.Commands.Validatiors

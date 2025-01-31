@@ -1,4 +1,4 @@
-﻿using  iClinic.Application.Abstracts.Presistence;
+﻿using iClinic.Presistence.Contract;
 using FluentValidation;
 using iClinic.Application.Features.Doctors.Commands.Handlers.AddDoctor;
 

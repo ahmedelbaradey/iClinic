@@ -3,12 +3,12 @@ using iClinic.Application.Base;
 using iClinic.Application.Features.Authorizations.Queries.Responses;
 using iClinic.Domain.Entities.Identities;
 using iClinic.Domain.Helpers;
-using iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using iClinic.Application.Features.Authorizations.Queries.Handlers.GetRoleById;
 using iClinic.Application.Features.Authorizations.Queries.Handlers.GetRoleList;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Authorizations.Queries.Handlers.ManageUserRoles
 {

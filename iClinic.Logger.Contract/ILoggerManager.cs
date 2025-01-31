@@ -1,4 +1,4 @@
-﻿namespace iClinic.Application.Abstracts.Logger
+﻿namespace iClinic.Logger.Contract
 {
     public interface ILoggerManager
     {

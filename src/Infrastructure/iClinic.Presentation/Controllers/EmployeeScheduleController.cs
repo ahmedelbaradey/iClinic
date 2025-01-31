@@ -1,7 +1,7 @@
 ﻿using iClinic.Presentation.Bases;
 using iClinic.Application.Features.EmployeeSchedulesFile.Commands.Models;
 using iClinic.Application.Features.EmployeeSchedulesFile.Queries.Models;
-using  iClinic.Application.Abstracts.Presistence;
+using  iClinic.Presistence.Contract;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 

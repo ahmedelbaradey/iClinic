@@ -3,7 +3,7 @@ using iClinic.Application.Base;
 using iClinic.Application.Features.DocumentTypes.Queriers.Models;
 using iClinic.Application.Features.DocumentTypes.Queriers.Response;
 using iClinic.Application.Features.DocumentTypes.Queriers.Responses;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 
 namespace iClinic.Application.Features.DocumentTypes.Queriers.Handlers

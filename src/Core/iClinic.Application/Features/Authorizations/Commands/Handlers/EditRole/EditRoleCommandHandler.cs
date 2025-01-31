@@ -1,6 +1,6 @@
 ﻿using iClinic.Application.Base;
-using iClinic.Application.Abstracts.Presistence;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Presistence.Contract;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Authorizations.Commands.Handlers.EditRole
 {

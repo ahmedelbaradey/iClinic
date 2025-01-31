@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using iClinic.Application.Base;
 using iClinic.Domain.Entities;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Doctors.Commands.Handlers.DeleteDoctor
 {

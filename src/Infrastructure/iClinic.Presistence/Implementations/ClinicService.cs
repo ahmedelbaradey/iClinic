@@ -1,6 +1,6 @@
 ﻿using iClinic.Domain.Entities;
 using iClinic.Infrastructure.InfrastructureBases;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -18,8 +18,7 @@ namespace  iClinic.Presistence.Implementations
 
         #region Constructors
 
-        public ClinicService(IGenericRepository<Clinic> clinicRepository,
-            ILogger<ClinicService> logger, IGenericRepository<ClinicDepartment> clinicDepartmentRepository)
+        public ClinicService(IGenericRepository<Clinic> clinicRepository,ILogger<ClinicService> logger, IGenericRepository<ClinicDepartment> clinicDepartmentRepository)
         {
             _clinicRepository = clinicRepository;
             _clinicDepartmentRepository = clinicDepartmentRepository;
@@ -67,8 +66,7 @@ namespace  iClinic.Presistence.Implementations
             try
             {
                 //Is ClinicDepartment Used this Clinic.
-                var isClinicDepartmentUsedThisClinic = await _clinicDepartmentRepository.GetTableNoTracking()
-                    .Where(x => x.ClinicId == clinic.ClinicId).FirstOrDefaultAsync();
+                var isClinicDepartmentUsedThisClinic = await _clinicDepartmentRepository.GetTableNoTracking().Where(x => x.ClinicId == clinic.ClinicId).FirstOrDefaultAsync();
 
                 if (isClinicDepartmentUsedThisClinic != null)
                     return false;

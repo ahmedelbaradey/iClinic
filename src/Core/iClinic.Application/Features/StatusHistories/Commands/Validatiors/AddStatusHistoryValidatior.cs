@@ -1,5 +1,5 @@
 ﻿using iClinic.Application.Features.StatusHistories.Commands.Models;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using FluentValidation;
 
 namespace iClinic.Application.Features.StatusHistories.Commands.Validatiors

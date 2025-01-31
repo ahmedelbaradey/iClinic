@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using iClinic.Application.Base;
 using iClinic.Application.Features.AppointmentStatuses.Queries.Responses;
-using iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 using iClinic.Application.Features.AppointmentStatuses.Queries.Handlers.GetAppointmentStatusLById;
 using iClinic.Application.Features.AppointmentStatuses.Queries.Handlers.GetAppointmentStatusList;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.AppointmentStatuses.Queries.Handlers
 {

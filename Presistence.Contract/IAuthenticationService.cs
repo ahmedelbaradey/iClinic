@@ -2,7 +2,7 @@
 using iClinic.Domain.Helpers;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace  iClinic.Application.Abstracts.Presistence
+namespace iClinic.Presistence.Contract
 {
     public interface IAuthenticationService
     {

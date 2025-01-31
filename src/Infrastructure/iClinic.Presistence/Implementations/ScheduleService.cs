@@ -1,6 +1,6 @@
 ﻿using iClinic.Domain.Entities;
 using iClinic.Infrastructure.InfrastructureBases;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 

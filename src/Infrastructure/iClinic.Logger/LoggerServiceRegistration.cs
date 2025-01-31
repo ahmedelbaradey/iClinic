@@ -1,4 +1,4 @@
-﻿using iClinic.Application.Abstracts.Logger;
+﻿using iClinic.Logger.Contract;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

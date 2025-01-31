@@ -1,5 +1,5 @@
-﻿using iClinic.Application.Abstracts.Logger;
-using iClinic.Application.Abstracts.Presistence;
+﻿using iClinic.Logger.Contract;
+using iClinic.Presistence.Contract;
 using iClinic.Application.Base;
 using iClinic.Application.Features.AppointmentStatuses.Commands.Handlers.AddAppointmentStatuses;
 using iClinic.Application.Features.AppointmentStatuses.Commands.Handlers.DeleteAppointmentStatuses;

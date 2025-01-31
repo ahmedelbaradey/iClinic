@@ -3,11 +3,11 @@ using iClinic.Application.Base;
 using iClinic.Application.Features.Appointments.Queries.Responses;
 using iClinic.Application.Wappers;
 using iClinic.Domain.Entities;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System.Linq.Expressions;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Appointments.Queries.Handlers.GetAppointmentById
 {

@@ -1,7 +1,7 @@
 ﻿using iClinic.Domain.Entities.Identities;
 using iClinic.Domain.Helpers;
 
-namespace  iClinic.Application.Abstracts.Presistence
+namespace iClinic.Presistence.Contract
 {
     public interface IAuthorizationService
     {

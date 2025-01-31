@@ -1,6 +1,6 @@
 ﻿using iClinic.Domain.Entities;
 
-namespace  iClinic.Application.Abstracts.Presistence
+namespace  iClinic.Presistence.Contract
 {
     public interface IAppointmentService
     {

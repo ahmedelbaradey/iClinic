@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using iClinic.Application.Base;
 using iClinic.Domain.Entities;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
-using iClinic.Application.Abstracts.Logger;
+using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Appointments.Commands.Handlers.DeleteAppointment
 {

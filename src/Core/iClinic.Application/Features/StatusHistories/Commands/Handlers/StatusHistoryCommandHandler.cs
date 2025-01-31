@@ -2,7 +2,7 @@
 using iClinic.Application.Base;
 using iClinic.Application.Features.StatusHistories.Commands.Models;
 using iClinic.Domain.Entities;
-using  iClinic.Application.Abstracts.Presistence;
+using iClinic.Presistence.Contract;
 using MediatR;
 
 namespace iClinic.Application.Features.StatusHistories.Commands.Handlers
