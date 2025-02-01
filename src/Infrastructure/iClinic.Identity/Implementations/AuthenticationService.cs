@@ -1,7 +1,7 @@
 ﻿using iClinic.Domain.Entities.Identities;
 using iClinic.Domain.Helpers;
 using iClinic.Infrastructure.InfrastructureBases;
-using  iClinic.Application.Abstracts.Presistence;
+using  iClinic.Identity.Contract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -10,6 +10,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using iClinic.Infrastructure.Contract;
 
 namespace  iClinic.Identity.Implementations
 {

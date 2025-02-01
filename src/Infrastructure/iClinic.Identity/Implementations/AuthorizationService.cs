@@ -1,7 +1,7 @@
 ﻿using iClinic.Domain.Entities.Identities;
 using iClinic.Domain.Helpers;
 using iClinic.Infrastructure.Data;
-using  iClinic.Application.Abstracts.Presistence;
+using  iClinic.Identity.Contract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;

@@ -1,4 +1,5 @@
-﻿using iClinic.Infrastructure.Data;
+﻿using iClinic.Infrastructure.Contract;
+using iClinic.Infrastructure.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;

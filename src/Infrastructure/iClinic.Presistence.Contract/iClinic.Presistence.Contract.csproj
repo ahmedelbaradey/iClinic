@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\iClinic.Infrastructure.Contract\iClinic.Infrastructure.Contract.csproj" />
-    <ProjectReference Include="..\iClinic.Presistence.Contract\iClinic.Presistence.Contract.csproj" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\iClinic.Domain\iClinic.Domain.csproj" />
   </ItemGroup>
 
 </Project>

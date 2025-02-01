@@ -2,7 +2,7 @@
 using iClinic.Application.Base;
 using iClinic.Domain.Entities.Identities;
 using iClinic.Domain.Helpers;
-using iClinic.Presistence.Contract;
+using iClinic.Identity.Contract;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using iClinic.Application.Features.Authentications.Commands.Handlers.RefreshToken;

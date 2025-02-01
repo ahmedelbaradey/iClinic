@@ -1,4 +1,5 @@
 ﻿using iClinic.Domain.Entities.Identities;
+using iClinic.Infrastructure.Contract;
 using iClinic.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 

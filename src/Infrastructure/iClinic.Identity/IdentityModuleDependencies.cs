@@ -1,4 +1,4 @@
-﻿using  iClinic.Application.Abstracts.Presistence;
+﻿using  iClinic.Identity.Contract;
 using iClinic.Identity.Implementations;
 using Microsoft.Extensions.DependencyInjection;
 

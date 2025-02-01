@@ -1,5 +1,5 @@
 ﻿using iClinic.Application.Base;
-using iClinic.Presistence.Contract;
+using iClinic.Identity.Contract;
 using MediatR;
 using iClinic.Logger.Contract;
 

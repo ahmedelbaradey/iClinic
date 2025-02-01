@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\iClinic.Domain\iClinic.Domain.csproj" />
+    <ProjectReference Include="..\iClinic.Infrastructure.Contract\iClinic.Infrastructure.Contract.csproj" />
   </ItemGroup>
 
 </Project>

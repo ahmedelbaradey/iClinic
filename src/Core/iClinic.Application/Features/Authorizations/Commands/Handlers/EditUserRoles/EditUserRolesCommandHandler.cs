@@ -1,5 +1,5 @@
 ﻿using iClinic.Application.Base;
-using iClinic.Presistence.Contract;
+using iClinic.Identity.Contract;
 using iClinic.Logger.Contract;
 
 namespace iClinic.Application.Features.Authorizations.Commands.Handlers.EditUserRoles

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 
-namespace iClinic.Infrastructure.InfrastructureBases
+namespace iClinic.Infrastructure.Contract
 {
     public interface IGenericRepository<T> where T : class
     {

@@ -1,4 +1,5 @@
-﻿using iClinic.Infrastructure.Data;
+﻿using iClinic.Infrastructure.Contract;
+using iClinic.Infrastructure.Data;
 using iClinic.Infrastructure.InfrastructureBases;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

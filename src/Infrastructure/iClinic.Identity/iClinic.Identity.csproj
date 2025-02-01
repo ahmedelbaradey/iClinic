@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\iClinic.Domain\iClinic.Domain.csproj" />
+    <ProjectReference Include="..\iClinic.Identity.Contract\iClinic.Identity.Contract.csproj" />
     <ProjectReference Include="..\iClinic.Infrastructure\iClinic.Infrastructure.csproj" />
-    <ProjectReference Include="..\iClinic.Presistence\iClinic.Presistence.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,6 @@
+2025-02-01 14:54:15.5403 ERROR The AuthorizationPolicy named: 'admin,user,doctor' was not found.
+2025-02-01 14:55:24.4045 ERROR The AuthorizationPolicy named: 'admin,user,doctor' was not found.
+2025-02-01 14:55:28.4692 ERROR The AuthorizationPolicy named: 'admin,user,doctor' was not found.
+2025-02-01 14:55:53.2347 ERROR The AuthorizationPolicy named: 'admin,user,doctor' was not found.
+2025-02-01 14:55:56.8435 ERROR The AuthorizationPolicy named: 'admin,user,doctor' was not found.
+2025-02-01 14:57:21.4293 ERROR The AuthorizationPolicy named: 'admin,user,doctor' was not found.

@@ -34,8 +34,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\iClinic.Logger.Contract\iClinic.Logger.Contract.csproj" />
-    <ProjectReference Include="..\..\..\Presistence.Contract\iClinic.Presistence.Contract.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Identity.Contract\iClinic.Identity.Contract.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Logger.Contract\iClinic.Logger.Contract.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\iClinic.Presistence.Contract\iClinic.Presistence.Contract.csproj" />
   </ItemGroup>
 
 </Project>

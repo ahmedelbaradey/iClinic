@@ -29,9 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iClinic.Logger", "src\Infra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Resources", "src\Core\iClinic.Resources\iClinic.Resources.csproj", "{FE0B49C1-C893-46E9-815A-81BAED7CC072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Presistence.Contract", "Presistence.Contract\iClinic.Presistence.Contract.csproj", "{33CAA875-6DAF-405C-A916-BE56B2BB5F44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Logger.Contract", "src\Infrastructure\iClinic.Logger.Contract\iClinic.Logger.Contract.csproj", "{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Logger.Contract", "iClinic.Logger.Contract\iClinic.Logger.Contract.csproj", "{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Presistence.Contract", "src\Infrastructure\iClinic.Presistence.Contract\iClinic.Presistence.Contract.csproj", "{F7177273-2F1F-4241-802C-7F96045778BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Identity.Contract", "src\Infrastructure\iClinic.Identity.Contract\iClinic.Identity.Contract.csproj", "{291A341F-8B12-4CFA-BE15-3E3DFA4E4EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iClinic.Infrastructure.Contract", "src\Infrastructure\iClinic.Infrastructure.Contract\iClinic.Infrastructure.Contract.csproj", "{3C31B45A-E37D-4E27-A4B8-94E61875C0C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,14 +79,22 @@ Global
 		{FE0B49C1-C893-46E9-815A-81BAED7CC072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0B49C1-C893-46E9-815A-81BAED7CC072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE0B49C1-C893-46E9-815A-81BAED7CC072}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33CAA875-6DAF-405C-A916-BE56B2BB5F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33CAA875-6DAF-405C-A916-BE56B2BB5F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33CAA875-6DAF-405C-A916-BE56B2BB5F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33CAA875-6DAF-405C-A916-BE56B2BB5F44}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7177273-2F1F-4241-802C-7F96045778BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7177273-2F1F-4241-802C-7F96045778BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7177273-2F1F-4241-802C-7F96045778BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7177273-2F1F-4241-802C-7F96045778BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291A341F-8B12-4CFA-BE15-3E3DFA4E4EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291A341F-8B12-4CFA-BE15-3E3DFA4E4EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291A341F-8B12-4CFA-BE15-3E3DFA4E4EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291A341F-8B12-4CFA-BE15-3E3DFA4E4EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C31B45A-E37D-4E27-A4B8-94E61875C0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C31B45A-E37D-4E27-A4B8-94E61875C0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C31B45A-E37D-4E27-A4B8-94E61875C0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C31B45A-E37D-4E27-A4B8-94E61875C0C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,8 +112,10 @@ Global
 		{FE94FD92-9491-4D70-BC87-3FD3D0FE7B91} = {E060B5BD-D49A-459B-B3DD-062762DC3FFC}
 		{6350083E-4B35-4D00-9A06-CCB652DA2F04} = {BBC4CB1E-A103-4F80-B330-886CCA2AA21A}
 		{FE0B49C1-C893-46E9-815A-81BAED7CC072} = {FE94FD92-9491-4D70-BC87-3FD3D0FE7B91}
-		{33CAA875-6DAF-405C-A916-BE56B2BB5F44} = {BBC4CB1E-A103-4F80-B330-886CCA2AA21A}
 		{E8BE16F9-7F0C-4230-B160-AAB1B8A5186A} = {BBC4CB1E-A103-4F80-B330-886CCA2AA21A}
+		{F7177273-2F1F-4241-802C-7F96045778BC} = {BBC4CB1E-A103-4F80-B330-886CCA2AA21A}
+		{291A341F-8B12-4CFA-BE15-3E3DFA4E4EAF} = {BBC4CB1E-A103-4F80-B330-886CCA2AA21A}
+		{3C31B45A-E37D-4E27-A4B8-94E61875C0C9} = {BBC4CB1E-A103-4F80-B330-886CCA2AA21A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52FFD621-3B99-418A-AABE-35C1395B91B7}
